@@ -1,0 +1,16 @@
+{
+  "addText": "Add {text}",
+  "cancelText": "Eliminate {text}",
+  "clickToUpload": "Click to upload",
+  "copyText": "copy",
+  "deleteText": "Delete {text}",
+  "export": "Export",
+  "exportData": "Export Statistical Data",
+  "queryText": "Query",
+  "resetText": "Reset {text}",
+  "saveText": "Save {text}",
+  "searchText": "Search",
+  "submitText": "Submit",
+  "sureText": "Exactly {text} determined",
+  "viewText": "View {text}"
+}

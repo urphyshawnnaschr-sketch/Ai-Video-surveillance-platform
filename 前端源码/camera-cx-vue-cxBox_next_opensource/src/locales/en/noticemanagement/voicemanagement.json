@@ -1,0 +1,10 @@
+{
+  "454512": "Add a phone number that can listen to voice messages normally and associate it with the created voice push method.",
+  "21mydf": "Whether To Push Voice Notifications",
+  "658fm3": "Please go to the Voice Message - Voice Notification section of the Voice Service Console, create and paste the template ID under \"Text to Voice Template\". For example, TTS287395390",
+  "8e482l": "To activate the voice service tutorial, please contact us to obtain it.",
+  "bqg368": "Text To Speech Template ID",
+  "d0bl92": "When you create an Acceesskey, Secret information will be attached. Please take good care of this information by obtaining and pasting the Secret here.",
+  "m8v1s6": "Please click on your avatar on the Alibaba Cloud platform to access the 'AccessKey Management'. Create a new sub user AccessKey for the first time, obtain and paste the ID here.",
+  "spqm11": "Voice Push Phone Number"
+}

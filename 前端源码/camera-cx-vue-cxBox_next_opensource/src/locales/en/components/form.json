@@ -1,0 +1,15 @@
+{
+  "6tpmss": "RTP Sending Port Range",
+  "6ucwq3": "Corresponding to the media node General.mediaServerId",
+  "76g178": "RTC Port",
+  "atp064": "Media node",
+  "ax72ey": "Format: 5000050300, be careful not to use Chinese commas",
+  "nqv7b4": "Node Name",
+  "q51n33": "RTP Receiving Port Range",
+  "y5j625": "Http Port",
+  "zs45z4": "RTSP Port",
+  "y572uc": "Node Type",
+  "y572u1": "Play Node",
+  "y572u2": "Record Node",
+  "y572u3": "Play & Record Node"
+}

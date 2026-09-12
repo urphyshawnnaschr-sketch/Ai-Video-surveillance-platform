@@ -1,0 +1,21 @@
+{
+  "auditResult": "审核结果",
+  "auditStatus": "审核状态",
+  "audited": "已审核",
+  "belongingRegion": "所属区域",
+  "common": {
+    "associationAlgorithm": "关联算法"
+  },
+  "corret": "正确",
+  "createCamera": "创建摄像头",
+  "detailed": "详情",
+  "error": "错误",
+  "exportData": "导出数据",
+  "inference": "推理间隔(秒)",
+  "notText": "无",
+  "pendingApproval": "待审核",
+  "runState": "运行状态",
+  "6lrx3t": "正确",
+  "ox0d1x": "错误",
+  "zzeg52": "算法"
+}

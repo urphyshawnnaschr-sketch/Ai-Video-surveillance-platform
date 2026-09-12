@@ -1,0 +1,22 @@
+{
+  "20f2ve": "3 Days",
+  "2srnww": "Alarm data retention period",
+  "6sh75y": "Alarm data storage period setting",
+  "6vaq1f": "1 Day",
+  "6xo6g2": "30 Days",
+  "8c25jc": "Please select the storage period for alarm data",
+  "j121m9": "15 Days",
+  "n41y16": "The data retention period refers to the time range for storing data within the alarm management.",
+  "qm6414": "90 Days",
+  "t31sgu": "45 Days",
+  "u6b32o": "7 Days",
+  "x62p69": "Example: \"Last 30 days\" refers to saving data from the current day to within 30 days, executed at 0:00 every day.",
+  "y1q2z3": "Alarm image retention period",
+  "y1q223": "180 Days",
+  "z1q2z3": "1 Year",
+  "z6q2z3": "2 Years",
+  "z12q2z3": "3 Years",
+  "z18q2z3": "5 Years",
+  "z24q2z3": "60 Days",
+  "z30q2z3": "270 Days"
+}

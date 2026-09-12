@@ -1,0 +1,20 @@
+{
+  "0abe4k": "Card information (optional)",
+  "17t2vg": "1. The data is a JSON string;",
+  "21hmw1": "Create a card",
+  "24130m": "Continuous frame detection frequency",
+  "3qhpe7": "The size of the uploaded image cannot exceed 1MB!",
+  "434huy": "After selecting the sharing mode, it cannot be changed and must be confirmed with the algorithm in advance",
+  "55348s": "Optional parameters must be confirmed with the algorithm in advance and cannot be changed after filling in,",
+  "55r8f6": "2. Each object contains attributes: label, name, value, type, element;",
+  "563pgs": "Please enter the algorithm code",
+  "5bne98": "Card Image",
+  "gz3t44": "Card Copy",
+  "r5n2ns": "Created successfully",
+  "r7jd23": "3. Example:[",
+  "ue836v": "Format Description",
+  "y37j67": "Format Description:",
+  "y416gd": "The image is in PNG format, with a resolution of 325 * 180 and a size not exceeding 1m",
+  "ym6er3": "Algorithmic Information",
+  "z3qo45": "Optional, recommended word count not exceeding 30 words"
+}

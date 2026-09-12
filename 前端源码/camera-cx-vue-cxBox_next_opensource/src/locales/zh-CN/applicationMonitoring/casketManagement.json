@@ -1,0 +1,42 @@
+{
+  "APUUtilizationRate": "APU使用率",
+  "CPUUsageRate": "CPU使用率",
+  "IPEUtilizationRate": "IPE使用率",
+  "ITMonitoring": "资源监控",
+  "KernelVersion": "内核版本",
+  "SDKVersion": "SDK版本",
+  "VICUtilizationRate": "VIC使用率",
+  "activation": "激活",
+  "active": "已激活",
+  "authorizeCode": "授权码",
+  "boxActive": "盒子设备已经激活",
+  "chipSideInformation": "芯片侧信息",
+  "cpuModel": "CPU型号",
+  "curState": "当前状态",
+  "disk": "磁盘容量",
+  "driverVersion": "驱动版本",
+  "equipmentMode": "设备模式",
+  "form": {
+    "tip": {
+      "chooseBox": "请选择盒子"
+    }
+  },
+  "hostSideInformation": "主机侧信息",
+  "machineCode": "机器码",
+  "manufacturer": "制造商",
+  "memoryCapacity": "内存容量",
+  "memoryUsageRate": "内存使用率",
+  "newVersion": "新版本号",
+  "newVersionReleased": "新版本发布",
+  "notActive": "未激活",
+  "publishSuccess": "发布成功",
+  "readMachineCode": "正在读取机器码...",
+  "systemVersion": "操作系统版本",
+  "temperature": "芯片温度",
+  "totalAvailableHostdisks": "Host磁盘可用总量",
+  "totalHostDiskCount": "Host磁盘总量",
+  "totalHostMemory": "Host内存总量",
+  "updateFile": "更新文件",
+  "updateSuccess": "更新成功",
+  "uploadAndPublish": "上传zip文件并发布版本"
+}

@@ -1,0 +1,13 @@
+{
+  "641801": "Enterprise WeChat group Webhook address",
+  "14g21v": "Required, please first open the DingTalk group \"Custom Robot\" and paste the Webhook address here.",
+  "1i5ts2": "Signature encryption is used for two-way security verification, and the \"signature address\" of the custom robot needs to be pasted here.",
+  "7k1qb8": "optional",
+  "b456no": "Push to enterprise WeChat group",
+  "h2xl3y": "Enterprise WeChat group robot address",
+  "j78571": "DingTalk group Webhook address",
+  "k6p9vu": "Push to DingTalk group",
+  "l97841": "Please first activate the enterprise WeChat group robot and paste the Webhook\nThe address is here. For example: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1111111 -2222-3333-4444444",
+  "m95221": "Please first activate the enterprise WeChat group robot, and then copy and paste the group address, for example: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1111111 -2222-3333-4444444",
+  "vu2we1": "Add signature (optional)"
+}

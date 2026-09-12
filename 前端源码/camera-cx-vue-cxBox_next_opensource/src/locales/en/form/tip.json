@@ -1,0 +1,20 @@
+{
+  "chooseAlarmLevel": "Please select the alarm level",
+  "chooseBelongingGroupUpload": "Please select your group before uploading",
+  "chooseBox": "Please select a box",
+  "chooseDateRange": "Please select a date and time range",
+  "chooseExportDateRange": "Please select the export date range",
+  "chooseGrouping": "Please select a group",
+  "inputAlgorithmEnglish": "Please enter the algorithm in English",
+  "inputAlgorithmName": "Please enter the algorithm name",
+  "inputAlgorithmEnName": "Please enter the algorithm English name",
+  "inputAreaName": "Please enter the region name",
+  "inputBoxName": "Please enter the box name",
+  "inputBoxNumber": "Please enter the box number",
+  "inputCameraName": "Please enter the camera name",
+  "inputContent": "Please enter the content",
+  "inputName": "Please enter a name",
+  "inputPassword": "Please input a password",
+  "inputPhoneNumber": "Please enter your phone number",
+  "inputVerificationCode": "Please enter the verification code"
+}

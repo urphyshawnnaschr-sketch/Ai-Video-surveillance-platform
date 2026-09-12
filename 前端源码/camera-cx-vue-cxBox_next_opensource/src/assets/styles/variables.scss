@@ -1,0 +1,41 @@
+$red: #fa5555;
+$primaryColor: #E53935;
+$primaryHoverColor: #E53935;
+$primaryPlainBgColor: #eaedfc;
+$primaryBorderColor: #abb9f2;
+$primaryBg: #ecf8ff;
+$titleColor: #444;
+$commonTextColor: #666;
+$labelColor:  #1A0808;
+$infoColor: #1A0808;
+$disableColor: #666;
+$linkColor: #E53935;
+$borderColor: #d8d8d8;
+$successColor: #67c23a;
+$imageBg: #f8f8f8;
+
+$borderColorBase: #ebeef5;
+$borderColorDark: #c0c4cc;
+$black: #001529;
+$dark: #323232;
+
+// sidebar
+$menuBg: #f3f7ff;
+$menuText: $commonTextColor;
+$menuActiveText: $primaryColor;
+
+$menuHoverBg: #d8dfff;
+$subMenuBg: #edf0ff;
+$menuActiveBg: #d8dfff;
+$sideBarWidth: 205px;
+$iconBarWidth: 64px;
+$navBarHeight: 50px;
+
+$tipBgColor: #ffe9cc;
+$tipColor: #f38900;
+
+:export {
+  menuBg: $menuBg;
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+}

@@ -1,0 +1,14 @@
+# Local secrets and generated files
+.env
+.env.local
+.env.*.local
+node_modules/
+target/
+dist/
+.idea/
+*.log
+*.pem
+*.key
+*.pfx
+.DS_Store
+Thumbs.db

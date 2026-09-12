@@ -1,0 +1,284 @@
+
+'''
+#1. 人脸注册
+request body示例
+
+{
+"image":"",
+"image_type":"BASE64",
+"group_id":"xxx",
+"user_id":"xxx",
+"face_id":"xxx"
+}
+
+response body示例:
+{
+    "status":0,
+    "msg":""
+}
+
+#2. 人脸检测
+
+url: http://localhost:8003/detect
+
+request body示例
+{
+"image":"",
+"image_type":"BASE64"
+}
+
+response body示例
+{
+    "face_num":1
+    "faces":[
+        {
+            "face_probability":0.95,
+            "bbox":[xmin,ymin,xmax,ymax],
+        }
+    ]
+}
+注释:
++face_num: 人脸数量
++faces: 检测的人脸列表
+++ face_probability: 人脸置信度
+++ bbox: 人脸包围框位置
+
+#3. 人脸识别
+
+url: http://localhost:8003/recognize
+
+request body示例
+{
+"image":"",
+"image_type":"BASE64",
+"camera_id":"1",
+"caputer_time":"2023-02-02-13-34-25-33"
+}
+
+response body 示例：
+{
+    "face_num":1
+    "faces":[
+        {
+            "face_probability":0.95,
+            "similiarity":0.8
+            "bbox":[xmin,ymin,xmax,ymax],
+            "user_info":{
+                "group_id":"china",
+                "user_id":"1111",
+                "face_id":"1"
+            }
+        }
+    ]
+}
++face_num: 人脸数量
++faces: 检测的人脸列表
+++ face_probability: 人脸置信度
+++ similiarity: 人脸匹配相似度
+++ bbox: 人脸包围框位置
+++ user_info: 匹配的人脸对应的用户信息,包含group_id,user_id,face_id
+
+#4. 人脸库管理--查询用户组列表(query_group_list)
+#5. 人脸库管理--查询用户列表(query_user_list)
+#6. 人脸库管理--删除用户组(clear_group)
+#7. 人脸库管理--删除用户(clear_user)
+#8. 人脸库管理--删除用户人脸(clear_face)
+4-8 参数类似，需根据具体操作类型选择设置group_id,user_id,face_id等,
+
+url: http://localhost:8003/face_lib_manager
+
+request body示例：
+{
+"op_type":"query_user_list"  
+"group_id":"xxxxx"
+}
+response body示例:
+{
+"status":"success",
+"user_list":user_list
+}
+
+
+# 人员追踪信息
+usl: http://localhost:8003/person_track
+
+
+response body示例:
+{
+"track_history":[
+  {
+    "input":{
+      "camera_id":"1",
+      "capture_time":"",
+      "history":[
+       {
+          "camera_id":"xx",
+          "capture_time":""
+        }
+      ]
+    }
+  }
+]
+}
+
+'''
+import cv2  
+import requests  
+import json
+import base64
+
+def test_detect_face():
+    # 读取图像  
+    image = cv2.imread('./test_images/mahuateng_2.jpg')  
+    # 将图像转换为Base64编码的字符串
+    _, img_encoded = cv2.imencode('.jpg', image)
+    image_base64 = base64.b64encode(img_encoded).decode('utf-8')
+
+    # 构造JSON请求体
+    data = {
+        'image': image_base64,
+        "image_type":"BASE64"
+    }
+    json_data = json.dumps(data)
+
+    # 发送HTTP请求
+    url = 'http://10.178.11.151:8003/detect'
+    headers = {'Content-Type': 'application/json'}
+
+    response = requests.request("POST", url, headers=headers, data=json_data,stream=False)
+    # 检查响应状态码
+    if response.status_code == 200:
+        print('图像成功发送到服务器！')
+        data = json.loads(response.content)
+        print(data)
+    else:
+        print('发送图像时出现问题。')
+
+def test_recognize_face():
+    # 读取图像  
+    image = cv2.imread('./test_images/mahuateng_2.jpg')  
+    # 将图像转换为Base64编码的字符串
+    _, img_encoded = cv2.imencode('.jpg', image)
+    image_base64 = base64.b64encode(img_encoded).decode('utf-8')
+
+    # 构造JSON请求体
+    data = {
+        'image': image_base64,
+        "image_type":"BASE64"
+    }
+    json_data = json.dumps(data)
+
+    # 发送HTTP请求
+    url = 'http://10.178.11.151:8003/recognize'
+    headers = {'Content-Type': 'application/json'}
+    
+    response = requests.request("POST", url, headers=headers, data=json_data,stream=False)
+    # 检查响应状态码
+    if response.status_code == 200:
+        print('图像成功发送到服务器！')
+        data = json.loads(response.content)
+        print(data)
+    else:
+        print('发送图像时出现问题。')
+
+def test_register_face():
+    # 读取图像  
+    image = cv2.imread('./test_images/mahuateng_2.jpg')  
+    # 将图像转换为Base64编码的字符串
+    _, img_encoded = cv2.imencode('.jpg', image)
+    image_base64 = base64.b64encode(img_encoded).decode('utf-8')
+
+    # 构造JSON请求体
+    data = {
+        "image":image_base64,
+        "image_type":"BASE64",
+        "group_id":"boss_group",
+        "user_id":"mahuateng",
+        "face_id":"2"
+    }
+
+    json_data = json.dumps(data)
+
+    # 发送HTTP请求
+    url = 'http://10.178.11.151:8003/register_face'
+    headers = {'Content-Type': 'application/json'}
+    
+    response = requests.request("POST", url, headers=headers, data=json_data,stream=False)
+    # 检查响应状态码
+    if response.status_code == 200:
+        print('图像成功发送到服务器！')
+        data = json.loads(response.content)
+        print(data)
+    else:
+        print('发送图像时出现问题。')
+
+def test_face_lib_manager(data):
+    # 构造JSON请求体
+    # data = {
+    #     "group_id":"boss_group",
+    #     "user_id":"mahuateng",
+    #     "face_id":"2"
+    # }
+
+    json_data = json.dumps(data)
+
+    # 发送HTTP请求
+    url = 'http://10.178.11.151:8003/face_lib_manager'
+    headers = {'Content-Type': 'application/json'}
+    
+    response = requests.request("POST", url, headers=headers, data=json_data,stream=False)
+    # 检查响应状态码
+    if response.status_code == 200:
+        data = json.loads(response.content)
+        print(data)
+    else:
+        print('发送图像时出现问题。')
+
+
+
+if __name__ == "__main__":
+    # 测试1. 人脸注册
+    test_register_face()
+
+    # 测试2. 用户组查询
+    data = {
+        "op_type":"query_group_list"
+    }
+    test_face_lib_manager(data)
+
+    # 测试3. 用户列表查询
+    data = {
+        "op_type":"query_user_list",
+        "group_id":"boss_group"
+    }
+    test_face_lib_manager(data)
+
+    # 测试4. 人脸检测
+    test_detect_face()
+
+    # 测试5. 人脸识别
+    test_recognize_face()
+
+    # 测试6. 删除人脸
+    data = {
+        "op_type":"clear_face",
+        "group_id":"boss_group",
+        "user_id":"mahuateng",
+        "face_id":"2"
+    }
+    test_face_lib_manager(data)    
+
+    # 测试7. 删除用户
+    data = {
+        "op_type":"clear_user",
+        "group_id":"boss_group",
+        "user_id":"mahuateng"
+    }
+    test_face_lib_manager(data)        
+
+    # 测试8. 删除用户组
+    data = {
+        "op_type":"clear_group",
+        "group_id":"boss_group"
+    }
+    test_face_lib_manager(data)   

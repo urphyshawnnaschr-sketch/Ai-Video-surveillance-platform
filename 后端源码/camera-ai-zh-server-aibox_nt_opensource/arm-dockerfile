@@ -1,0 +1,9 @@
+FROM registry.cn-hangzhou.aliyuncs.com/yihecode/images:java1.8-arm
+MAINTAINER '465769438@qq.com'
+ADD ./camera-ai-zh-server-0.0.1-SNAPSHOT.jar /app-zh.jar
+RUN ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN echo "Asia/Shanghai" > /etc/timezone
+RUN apt-get update && apt-get install -y git
+EXPOSE 8021
+#ENTRYPOINT exec java -Xmx16g -Xms2g -Xmn1g -jar app-zh.jar
+ENTRYPOINT exec java -jar app-zh.jar

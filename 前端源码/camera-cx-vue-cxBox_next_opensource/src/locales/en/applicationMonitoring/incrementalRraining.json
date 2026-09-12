@@ -1,0 +1,21 @@
+{
+  "6lrx3t": "Correct",
+  "auditResult": "Audit result",
+  "auditStatus": "Audit status",
+  "audited": "Audited",
+  "belongingRegion": "Associated region",
+  "common": {
+    "associationAlgorithm": "Association Algorithm"
+  },
+  "corret": "Correct",
+  "createCamera": "Create a camera",
+  "detailed": "Details",
+  "error": "Error",
+  "exportData": "Export data",
+  "inference": "Inference interval (seconds)",
+  "notText": "Not have",
+  "ox0d1x": "Error",
+  "pendingApproval": "Pending approval",
+  "runState": "Running State",
+  "zzeg52": "Algorithm"
+}

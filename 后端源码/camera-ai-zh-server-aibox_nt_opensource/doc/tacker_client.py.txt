@@ -1,0 +1,119 @@
+
+'''
+# 功能1 : 新增跟踪器
+
+url: http://localhost:8005/add_tracker
+
+request body:
+{
+    'id':"cam_1",
+    "video_source":"./person.mp4",
+    "sample_interval":3,
+    "scale":0.4,
+    "roi":[(50,50),(1100,30),(1100,700),(50,650),(25,500)],
+    "output_path":"./cam_1.mp4"
+}
++ id : string,输入源id,具有唯一性
++ video_source: string, 输入源，可以是rtsp视频流也可以本地视频
++ sample_interval: int, 采样间隔，可以理解为源视频每sample_interval帧抽取一帧，而输出帧率为:原视频fps/sample_interval
++ scale: float,输出视频相对于原视频的缩放比例。取值范围[0.1,1.0]
++ roi: List[Tuple(int,int)],感兴趣区域，有多边形的多个顶点按逆时针方向组合而成
++ output_path: string,输出路径，可以是rtsp地址，也可以是本地视频路径
+
+response:
+状态码：200 表示成功，
+状态码：422 表示失败
+消息体：
+{
+    "status":2,          # 错误码，
+    "msg":"param error"  # 错误提示
+}       
+
+
+# 功能2: 删除跟踪器
+url: http://localhost:8005/delete_tracker
+
+request body:
+{
+  'id':"cam_1"
+}
++ id :string,输入源id,具有唯一性
+
+response:
+状态码：200 表示成功，
+状态码：422 表示失败
+消息体：
+{
+    "status":2,          # 错误码，
+    "msg":"param error"  # 错误提示
+}     
+
+
+
+
+'''
+import cv2  
+import requests  
+import json
+import base64
+import time
+
+
+def test_add_tracker():
+    print("+++++++++  start test add_tracker ++++++++++++++")
+    data = {
+        'id':"cam_1",
+        "video_source":"./test_videos/person.mp4",
+        "sample_interval":3,
+        "scale":0.4,
+        "roi":[(50,50),(1100,30),(1100,700),(50,650),(25,500)],
+        "output_path":"./test_videos/cam_2.mp4"
+    }
+    json_data = json.dumps(data)
+
+    # 发送HTTP请求
+    url = 'http://localhost:8005/add_tracker'
+    headers = {'Content-Type': 'application/json'}
+
+    response = requests.request("POST", url, headers=headers, data=json_data,stream=False)
+    # 检查响应状态码
+    if response.status_code == 200:
+        data = json.loads(response.content)
+        print(data)
+    else:
+        data = json.loads(response.content)
+        print(data)
+    print("+++++++++  end test add_tracker ++++++++++++++")
+
+
+def test_delete_tracker():
+    print("+++++++++  start test delete_tracker ++++++++++++++")
+    data = {
+        'id':"cam_1"
+    }
+    json_data = json.dumps(data)
+
+    # 发送HTTP请求
+    url = 'http://localhost:8005/delete_tracker'
+    headers = {'Content-Type': 'application/json'}
+    
+    response = requests.request("POST", url, headers=headers, data=json_data,stream=False)
+    # 检查响应状态码
+    if response.status_code == 200:
+        data = json.loads(response.content)
+        print(data)
+    else:
+        data = json.loads(response.content)
+        print(data)
+    print("+++++++++  end test delete_tracker ++++++++++++++")
+
+
+if __name__ == "__main__":
+    # 测试1 新增跟踪器
+    #test_add_tracker()
+    # 测试2 新增跟踪器
+    
+    # 测试2 删除跟踪器
+    test_delete_tracker()
+
+    time.sleep(100)

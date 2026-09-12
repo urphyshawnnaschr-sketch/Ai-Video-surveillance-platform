@@ -1,0 +1,42 @@
+{
+  "APUUtilizationRate": "APU utilization rate",
+  "CPUUsageRate": "CPU usage rate",
+  "IPEUtilizationRate": "IPE usage rate",
+  "ITMonitoring": "IT Monitoring",
+  "KernelVersion": "Kernel Version",
+  "SDKVersion": "SDK version",
+  "VICUtilizationRate": "VIC usage rate",
+  "activation": "Activation",
+  "active": "Active",
+  "authorizeCode": "AUTHORIZE CODE",
+  "boxActive": "The box device has been activated",
+  "chipSideInformation": "Chip side information",
+  "cpuModel": "CPU model",
+  "curState": "Current state",
+  "disk": "CAPACITY",
+  "driverVersion": "Driver Version",
+  "equipmentMode": "Equipment mode",
+  "form": {
+    "tip": {
+      "chooseBox": "Please select a box"
+    }
+  },
+  "hostSideInformation": "Host side information",
+  "machineCode": "Machine code",
+  "manufacturer": "Manufacturer",
+  "memoryCapacity": "Memory capacity",
+  "memoryUsageRate": "Memory usage rate",
+  "newVersion": "New version number",
+  "newVersionReleased": "New version released",
+  "notActive": "Not active",
+  "publishSuccess": "Published successfully",
+  "readMachineCode": "Reading machine code ..",
+  "systemVersion": "Operating system version",
+  "temperature": "CHIP Temperature",
+  "totalAvailableHostdisks": "Total available Host disks",
+  "totalHostDiskCount": "Total host disk count",
+  "totalHostMemory": "Total host memory",
+  "updateFile": "Update file",
+  "updateSuccess": "Update success",
+  "uploadAndPublish": "Upload zip file and publish version"
+}

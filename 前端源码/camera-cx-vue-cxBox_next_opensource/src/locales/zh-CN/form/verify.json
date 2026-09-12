@@ -1,0 +1,8 @@
+{
+  "accountOrPwdCannot": "账号密码不能为空",
+  "cannotExceed": "上传文件不能超过 100MB",
+  "nameCannot": "名称不能为空",
+  "phoneCannot": "手机号不能为空",
+  "phoneError": "手机号错误",
+  "phoneIncorrect": "手机号格式不正确"
+}

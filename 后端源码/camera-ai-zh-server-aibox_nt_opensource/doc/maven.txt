@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=E:\projects\camera-ai-zh-server\doc\artemis-http-client-1.1.7.jar -DgroupId=com.hikvision -DartifactId=artemis.sdk -Dversion=1.0.0 -Dpackaging=jar

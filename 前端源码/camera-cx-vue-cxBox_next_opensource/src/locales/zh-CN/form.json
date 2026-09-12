@@ -1,0 +1,30 @@
+{
+  "tip": {
+    "chooseAlarmLevel": "请选择告警等级",
+    "chooseBelongingGroupUpload": "请选择所属组后再上传",
+    "chooseBox": "请选择盒子",
+    "chooseDateRange": "请选择日期时间范围",
+    "chooseExportDateRange": "请选择导出日期范围",
+    "chooseGrouping": "请选择分组",
+    "inputAlgorithmEnglish": "请输入算法英文",
+    "inputAlgorithmName": "请输入算法名称",
+    "inputAlgorithmEnName": "请输入算法英文名称",
+    "inputAreaName": "请输入区域名称",
+    "inputBoxName": "请输入盒子名称",
+    "inputBoxNumber": "请输入盒子编号",
+    "inputCameraName": "请输入摄像头名称",
+    "inputContent": "请输入内容",
+    "inputName": "请输入名称",
+    "inputPassword": "请输入密码",
+    "inputPhoneNumber": "请输入手机号",
+    "inputVerificationCode": "请输入验证码"
+  },
+  "verify": {
+    "accountOrPwdCannot": "账号密码不能为空",
+    "cannotExceed": "上传文件不能超过 100MB",
+    "nameCannot": "名称不能为空",
+    "phoneCannot": "手机号不能为空",
+    "phoneError": "手机号错误",
+    "phoneIncorrect": "手机号格式不正确"
+  }
+}

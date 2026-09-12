@@ -1,0 +1,1427 @@
+@font-face {
+  font-family: icomoon;
+  src: url(./icomoon.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: block
+}
+
+[class*=" icon-"],[class^=icon-] {
+  font-family: icomoon!important;
+  speak: never;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.icon-aios-hide-same-type:before {
+  content: "\EA4B"
+}
+
+.icon-video-track-gaps-reload:before {
+  content: "\EA4A";
+  color: #666
+}
+
+.icon-track-video-top-froze:before {
+  content: "\EA40"
+}
+
+.icon-track-video-unfold:before {
+  content: "\EA41"
+}
+
+.icon-track-video-update-track:before {
+  content: "\EA42"
+}
+
+.icon-track-video-update-track1:before {
+  content: "\EA43"
+}
+
+.icon-track-video-link-track-remove .path1:before {
+  content: "\EA44";
+  color: #ff6060;
+  opacity: .1
+}
+
+.icon-track-video-link-track-remove .path2:before {
+  content: "\EA45";
+  margin-left: -1em;
+  color: #ff4d4f
+}
+
+.icon-track-video-delete-track:before {
+  content: "\EA46"
+}
+
+.icon-track-video-fold:before {
+  content: "\EA47"
+}
+
+.icon-track-video-link-track:before {
+  content: "\EA48"
+}
+
+.icon-track-video-split:before {
+  content: "\EA49"
+}
+
+.icon-video-track-addbox-fail:before {
+  content: "\EA3B"
+}
+
+.icon-video-track-addbox-success:before {
+  content: "\EA3C"
+}
+
+.icon-video-track-addbox-doing:before {
+  content: "\EA3D"
+}
+
+.icon-video-track-move-box2:before {
+  content: "\EA3E"
+}
+
+.icon-video-track-box-list:before {
+  content: "\EA3F"
+}
+
+.icon-arrow-down:before {
+  content: "\EA34"
+}
+
+.icon-arrow-right:before {
+  content: "\EA35"
+}
+
+.icon-video-warning:before {
+  content: "\EA36"
+}
+
+.icon-video-track-add:before {
+  content: "\EA37"
+}
+
+.icon-video-track-doing:before {
+  content: "\EA38";
+  color: #ccc
+}
+
+.icon-video-track-done:before {
+  content: "\EA39";
+  color: #ccc
+}
+
+.icon-video-track-move-box:before {
+  content: "\EA3A"
+}
+
+.icon-aios_cp_model_convert:before {
+  content: "\EA1F"
+}
+
+.icon-aios_collect:before {
+  content: "\EA20";
+  color: #47444f
+}
+
+.icon-aios_cp_add:before {
+  content: "\EA21"
+}
+
+.icon-aios_lp_step:before {
+  content: "\EA1E"
+}
+
+.icon-aios_lasso-dec:before {
+  content: "\EA0D"
+}
+
+.icon-aios_lasso-inc:before {
+  content: "\EA0E"
+}
+
+.icon-aios_pipeline-debug:before {
+  content: "\EA0F"
+}
+
+.icon-aios_play:before {
+  content: "\EA10"
+}
+
+.icon-aios_primary_color:before {
+  content: "\EA11"
+}
+
+.icon-aios_project-check:before {
+  content: "\EA12"
+}
+
+.icon-aios_project-setting:before {
+  content: "\EA13"
+}
+
+.icon-aios_switch:before {
+  content: "\EA14"
+}
+
+.icon-aios_team-update:before {
+  content: "\EA15"
+}
+
+.icon-aios_training:before {
+  content: "\EA16"
+}
+
+.icon-aios_add_new:before {
+  content: "\EA17"
+}
+
+.icon-aios_compress:before {
+  content: "\EA18"
+}
+
+.icon-aios_dataset:before {
+  content: "\EA19"
+}
+
+.icon-aios_exit_fullpage:before {
+  content: "\EA1A"
+}
+
+.icon-aios_fullpage:before {
+  content: "\EA1B"
+}
+
+.icon-aios_increase:before {
+  content: "\EA1C"
+}
+
+.icon-aios_lasso:before {
+  content: "\EA1D"
+}
+
+.icon-aios_rewritekeypoint:before {
+  content: "\EA0C"
+}
+
+.icon-aios_shouldmark:before {
+  content: "\EA0B"
+}
+
+.icon-aios_erase:before {
+  content: "\EA09"
+}
+
+.icon-aios_drawing:before {
+  content: "\EA0A"
+}
+
+.icon-aios_pixel_calc:before {
+  content: "\EA08"
+}
+
+.icon-aios_newfile:before {
+  content: "\EA07"
+}
+
+.icon-aios_vscode:before {
+  content: "\EA05"
+}
+
+.icon-aios_jupeter:before {
+  content: "\EA06"
+}
+
+.icon-aios_continue:before {
+  content: "\E9FE"
+}
+
+.icon-aios_jiao:before {
+  content: "\E9FF"
+}
+
+.icon-aios_qiye:before {
+  content: "\EA00"
+}
+
+.icon-aios_stop:before {
+  content: "\EA01"
+}
+
+.icon-aios_yichang:before {
+  content: "\EA02"
+}
+
+.icon-aios_zuyuan:before {
+  content: "\EA03"
+}
+
+.icon-aios_bing:before {
+  content: "\EA04"
+}
+
+.icon-aios_lp_start_train:before {
+  content: "\E9FC"
+}
+
+.icon-aios_addcube:before {
+  content: "\E9FD"
+}
+
+.icon-icon-aios_lp_train_arrow:before {
+  content: "\E9C9"
+}
+
+.icon-icon-aios_new_icon:before {
+  content: "\E9CA"
+}
+
+.icon-icon-aios_play2:before {
+  content: "\E9CB"
+}
+
+.icon-icon-aios_share:before {
+  content: "\E9CC"
+}
+
+.icon-icon-aios_status_success:before {
+  content: "\E9CD"
+}
+
+.icon-icon-aios_status_wait:before {
+  content: "\E9CE"
+}
+
+.icon-icon-aios_stop2:before {
+  content: "\E9CF"
+}
+
+.icon-icon-aios_toogle_list:before {
+  content: "\E9D0"
+}
+
+.icon-icon-aios_toogle_view:before {
+  content: "\E9D1"
+}
+
+.icon-icon-aios_visual .path1:before {
+  content: "\E9D2";
+  color: #689cff
+}
+
+.icon-icon-aios_visual .path2:before {
+  content: "\E9D3";
+  margin-left: -1.0009765625em;
+  color: #c8deff
+}
+
+.icon-icon-aios_visual2 .path1:before {
+  content: "\E9D4";
+  color: #bdc9e2
+}
+
+.icon-icon-aios_visual2 .path2:before {
+  content: "\E9D5";
+  margin-left: -1.0009765625em;
+  color: #edf2f9
+}
+
+.icon-icon-aios_cancle_share:before {
+  content: "\E9D6"
+}
+
+.icon-icon-aios_dlp_video:before {
+  content: "\E9D7"
+}
+
+.icon-icon-aios_enter_cp .path1:before {
+  content: "\E9D8";
+  color: #80c6ff
+}
+
+.icon-icon-aios_enter_cp .path2:before {
+  content: "\E9D9";
+  margin-left: -1em;
+  color: #268bff
+}
+
+.icon-icon-aios_enter_dlp .path1:before {
+  content: "\E9DA";
+  color: #2f8df8
+}
+
+.icon-icon-aios_enter_dlp .path2:before {
+  content: "\E9DB";
+  margin-left: -1em;
+  color: #80c6ff
+}
+
+.icon-icon-aios_enter_dp .path1:before {
+  content: "\E9DC";
+  color: #80c6ff
+}
+
+.icon-icon-aios_enter_dp .path2:before {
+  content: "\E9DD";
+  margin-left: -1em;
+  color: #2f8df8
+}
+
+.icon-icon-aios_enter_lp .path1:before {
+  content: "\E9DE";
+  color: #2f8df8
+}
+
+.icon-icon-aios_enter_lp .path2:before {
+  content: "\E9DF";
+  margin-left: -1em;
+  color: #80c6ff
+}
+
+.icon-icon-aios_enter_tp .path1:before {
+  content: "\E9E0";
+  color: #80c6ff
+}
+
+.icon-icon-aios_enter_tp .path2:before {
+  content: "\E9E1";
+  margin-left: -1em;
+  color: #2f8df8
+}
+
+.icon-icon-aios_jupyter .path1:before {
+  content: "\E9E2";
+  color: #689cff
+}
+
+.icon-icon-aios_jupyter .path2:before {
+  content: "\E9E3";
+  margin-left: -1em;
+  color: #c8deff
+}
+
+.icon-icon-aios_jupyter .path3:before {
+  content: "\E9E4";
+  margin-left: -1em;
+  color: #689cff
+}
+
+.icon-icon-aios_jupyter .path4:before {
+  content: "\E9E5";
+  margin-left: -1em;
+  color: #c8deff
+}
+
+.icon-icon-aios_jupyter .path5:before {
+  content: "\E9E6";
+  margin-left: -1em;
+  color: #689cff
+}
+
+.icon-icon-aios_jupyter .path6:before {
+  content: "\E9E7";
+  margin-left: -1em;
+  color: #c8deff
+}
+
+.icon-icon-aios_jupyter .path7:before {
+  content: "\E9E8";
+  margin-left: -1em;
+  color: #689cff
+}
+
+.icon-icon-aios_jupyter .path8:before {
+  content: "\E9E9";
+  margin-left: -1em;
+  color: #c8deff
+}
+
+.icon-icon-aios_jupyter2 .path1:before {
+  content: "\E9EA";
+  color: #c0cde7
+}
+
+.icon-icon-aios_jupyter2 .path2:before {
+  content: "\E9EB";
+  margin-left: -1em;
+  color: #eff5ff
+}
+
+.icon-icon-aios_jupyter2 .path3:before {
+  content: "\E9EC";
+  margin-left: -1em;
+  color: #c0cde7
+}
+
+.icon-icon-aios_jupyter2 .path4:before {
+  content: "\E9ED";
+  margin-left: -1em;
+  color: #eff5ff
+}
+
+.icon-icon-aios_jupyter2 .path5:before {
+  content: "\E9EE";
+  margin-left: -1em;
+  color: #c0cde7
+}
+
+.icon-icon-aios_jupyter2 .path6:before {
+  content: "\E9EF";
+  margin-left: -1em;
+  color: #eff5ff
+}
+
+.icon-icon-aios_jupyter2 .path7:before {
+  content: "\E9F0";
+  margin-left: -1em;
+  color: #c0cde7
+}
+
+.icon-icon-aios_jupyter2 .path8:before {
+  content: "\E9F1";
+  margin-left: -1em;
+  color: #eff5ff
+}
+
+.icon-icon-aios_light .path1:before {
+  content: "\E9F2";
+  color: #c0cde7
+}
+
+.icon-icon-aios_light .path2:before {
+  content: "\E9F3";
+  margin-left: -1em;
+  color: #eff5ff
+}
+
+.icon-icon-aios_light .path3:before {
+  content: "\E9F4";
+  margin-left: -1em;
+  color: #c0cde7
+}
+
+.icon-icon-aios_light2 .path1:before {
+  content: "\E9F5";
+  color: #689cff
+}
+
+.icon-icon-aios_light2 .path2:before {
+  content: "\E9F6";
+  margin-left: -1em;
+  color: #c8deff
+}
+
+.icon-icon-aios_light2 .path3:before {
+  content: "\E9F7";
+  margin-left: -1em;
+  color: #689cff
+}
+
+.icon-icon-aios_lp_add_image:before {
+  content: "\E9F8"
+}
+
+.icon-icon-aios_lp_expand:before {
+  content: "\E9F9";
+  color: #b8bce6
+}
+
+.icon-icon-aios_lp_status_play:before {
+  content: "\E9FA"
+}
+
+.icon-icon-aios_lp_status_stop:before {
+  content: "\E9FB"
+}
+
+.icon-aios_xianshileibie:before {
+  content: "\E9C7"
+}
+
+.icon-aios_yincangleibie:before {
+  content: "\E9C8"
+}
+
+.icon-label-statistics:before {
+  content: "\E9C6"
+}
+
+.icon-aios_select:before {
+  content: "\E9C5"
+}
+
+.icon-aios_permission:before {
+  content: "\E9C4"
+}
+
+.icon-aios_hidden:before {
+  content: "\E9C0"
+}
+
+.icon-aios_refresh:before {
+  content: "\E9A8"
+}
+
+.icon-aios_lock:before {
+  content: "\E9A9"
+}
+
+.icon-aios_next_video:before {
+  content: "\E9AA"
+}
+
+.icon-aios_revert_downward:before {
+  content: "\E9AB"
+}
+
+.icon-aios_new_point:before {
+  content: "\E9AC"
+}
+
+.icon-aios_licence2:before {
+  content: "\E9AD"
+}
+
+.icon-aios_stop_upload:before {
+  content: "\E9AE"
+}
+
+.icon-aios_retry:before {
+  content: "\E9AF"
+}
+
+.icon-aios_maximize:before {
+  content: "\E9B0"
+}
+
+.icon-aios_minimize:before {
+  content: "\E9B1"
+}
+
+.icon-aios_label_obj_unoccluded:before {
+  content: "\E9B2"
+}
+
+.icon-aios_label_obj_occluded:before {
+  content: "\E9B3"
+}
+
+.icon-aios_single2:before {
+  content: "\E9B4"
+}
+
+.icon-aios_new_polygon:before {
+  content: "\E9B5"
+}
+
+.icon-aios_copy:before {
+  content: "\E9B6"
+}
+
+.icon-aios_link:before {
+  content: "\E9B7"
+}
+
+.icon-aios_merge:before {
+  content: "\E9B8"
+}
+
+.icon-aios_start_upload:before {
+  content: "\E9B9"
+}
+
+.icon-aios_expand:before {
+  content: "\E9BA"
+}
+
+.icon-aios_cancle_upload:before {
+  content: "\E9BB"
+}
+
+.icon-aios_unlock:before {
+  content: "\E9BC"
+}
+
+.icon-aios_set_invisible:before {
+  content: "\E9BD"
+}
+
+.icon-aios_licence .path1:before {
+  content: "\E9BE";
+  color: #689cff
+}
+
+.icon-aios_licence .path2:before {
+  content: "\E9BF";
+  margin-left: -1em;
+  color: #c8deff
+}
+
+.icon-aios_edit:before {
+  content: "\E9A7"
+}
+
+.icon-aios_leadin:before {
+  content: "\E9A1"
+}
+
+.icon-aios_download:before {
+  content: "\E9A2"
+}
+
+.icon-aios_upload:before {
+  content: "\E9A3"
+}
+
+.icon-aios_hidetaged:before {
+  content: "\E997"
+}
+
+.icon-aios_showtaged:before {
+  content: "\E998"
+}
+
+.icon-aios_visible:before {
+  content: "\E995"
+}
+
+.icon-aios_invisible:before {
+  content: "\E996"
+}
+
+.icon-aios_zoomout1:before {
+  content: "\E993"
+}
+
+.icon-aios_zoomin1:before {
+  content: "\E994"
+}
+
+.icon-aios_sort:before {
+  content: "\E991"
+}
+
+.icon-aios_backspace:before {
+  content: "\E992"
+}
+
+.icon-aios_select_none:before {
+  content: "\E98E"
+}
+
+.icon-aios_select_all:before {
+  content: "\E98F"
+}
+
+.icon-aios_select_reverse:before {
+  content: "\E990"
+}
+
+.icon-aios_readall:before {
+  content: "\E98C"
+}
+
+.icon-aios_read:before {
+  content: "\E98D"
+}
+
+.icon-aios_model-desc:before {
+  content: "\E988"
+}
+
+.icon-aios_unshare:before {
+  content: "\E98A"
+}
+
+.icon-aios_dataset-extend:before {
+  content: "\E98B"
+}
+
+.icon-aios_rect4:before {
+  content: "\E986"
+}
+
+.icon-aios_rect2:before {
+  content: "\E987"
+}
+
+.icon-aios_point:before {
+  content: "\E983"
+}
+
+.icon-aios_single:before {
+  content: "\E984"
+}
+
+.icon-aios_selecter:before {
+  content: "\E985"
+}
+
+.icon-aios_valid:before {
+  content: "\E981"
+}
+
+.icon-aios_invalid:before {
+  content: "\E982"
+}
+
+.icon-aios_remove:before {
+  content: "\E980"
+}
+
+.icon-aios_questionmark:before {
+  content: "\E97F";
+  color: #a9bec1
+}
+
+.icon-aios_penminus:before {
+  content: "\E97D"
+}
+
+.icon-aios_penplus:before {
+  content: "\E97E"
+}
+
+.icon-aios_clear_label:before {
+  content: "\E97C"
+}
+
+.icon-aios_line2:before {
+  content: "\E975"
+}
+
+.icon-aios_line3:before {
+  content: "\E976"
+}
+
+.icon-aios_pen:before {
+  content: "\E977"
+}
+
+.icon-aios_zoomin:before {
+  content: "\E978"
+}
+
+.icon-aios_zoomout:before {
+  content: "\E979"
+}
+
+.icon-aios_hand:before {
+  content: "\E97A"
+}
+
+.icon-aios_line1:before {
+  content: "\E97B"
+}
+
+.icon-aios_export:before {
+  content: "\E974"
+}
+
+.icon-aios_delT:before {
+  content: "\E999"
+}
+
+.icon-aios_drawbox:before {
+  content: "\E99A"
+}
+
+.icon-aios_eye:before {
+  content: "\E99B"
+}
+
+.icon-aios_eyeclose:before {
+  content: "\E99C"
+}
+
+.icon-aios_eyeplus:before {
+  content: "\E99D"
+}
+
+.icon-aios_filter:before {
+  content: "\E99E"
+}
+
+.icon-aios_hasT:before {
+  content: "\E99F"
+}
+
+.icon-aios_testapi:before {
+  content: "\E9A0"
+}
+
+.icon-more:before {
+  content: "\E973"
+}
+
+.icon-aios_jiaruqiye:before {
+  content: "\E971"
+}
+
+.icon-aios_shenqingjiaru1:before {
+  content: "\E972"
+}
+
+.icon-aios_biaozhuzumingcheng:before {
+  content: "\E96E"
+}
+
+.icon-aios_zuyuanshu:before {
+  content: "\E96F"
+}
+
+.icon-aios_zuzhang:before {
+  content: "\E970"
+}
+
+.icon-aios_baocun:before {
+  content: "\E96D"
+}
+
+.icon-aios_menu:before {
+  content: "\E96C"
+}
+
+.icon-logo1:before {
+  content: "\E96B"
+}
+
+.icon-logo:before {
+  content: "\E989"
+}
+
+.icon-aios_back:before {
+  content: "\E968"
+}
+
+.icon-aios_document:before {
+  content: "\E969"
+}
+
+.icon-aios_folder:before {
+  content: "\E96A"
+}
+
+.icon-calender:before {
+  content: "\E956"
+}
+
+.icon-clock:before {
+  content: "\E957"
+}
+
+.icon-daochu:before {
+  content: "\E958"
+}
+
+.icon-daoru:before {
+  content: "\E959"
+}
+
+.icon-fenxiang:before {
+  content: "\E95A"
+}
+
+.icon-huifu:before {
+  content: "\E95B"
+}
+
+.icon-huishouzhan:before {
+  content: "\E95C"
+}
+
+.icon-kelong:before {
+  content: "\E95D"
+}
+
+.icon-qingkong:before {
+  content: "\E95E"
+}
+
+.icon-rizhi:before {
+  content: "\E95F"
+}
+
+.icon-shanchu:before {
+  content: "\E960"
+}
+
+.icon-shuaxin:before {
+  content: "\E961"
+}
+
+.icon-tianjia:before {
+  content: "\E962"
+}
+
+.icon-tiaoshi:before {
+  content: "\E963"
+}
+
+.icon-xiangqing:before {
+  content: "\E964"
+}
+
+.icon-xinzeng:before {
+  content: "\E965"
+}
+
+.icon-yincangyouce:before {
+  content: "\E966"
+}
+
+.icon-yincangzuoce:before {
+  content: "\E967"
+}
+
+.icon-aios_anquanyanzheng:before {
+  content: "\E900"
+}
+
+.icon-aios_bangzhuzhongxin:before {
+  content: "\E901"
+}
+
+.icon-aios_bianji-1:before {
+  content: "\E902"
+}
+
+.icon-aios_bianji-2:before {
+  content: "\E903"
+}
+
+.icon-aios_biaoqian:before {
+  content: "\E904"
+}
+
+.icon-aios_biaoqianrenwuxuanze:before {
+  content: "\E905"
+}
+
+.icon-aios_biaozhu:before {
+  content: "\E906"
+}
+
+.icon-aios_bofang:before {
+  content: "\E907"
+}
+
+.icon-aios_bofangbeisujianshao:before {
+  content: "\E908"
+}
+
+.icon-aios_bofangbeisuzengjia:before {
+  content: "\E909"
+}
+
+.icon-aios_bumen:before {
+  content: "\E90A"
+}
+
+.icon-aios_chaifen:before {
+  content: "\E90B"
+}
+
+.icon-aios_chexiao:before {
+  content: "\E90C"
+}
+
+.icon-aios_chuangjianqiye:before {
+  content: "\E90D"
+}
+
+.icon-aios_danchuangguanbi:before {
+  content: "\E90E"
+}
+
+.icon-aios_daoru:before {
+  content: "\E90F"
+}
+
+.icon-aios_fenpeichuangjianrenwu:before {
+  content: "\E910"
+}
+
+.icon-aios_fenxiang-1:before {
+  content: "\E911"
+}
+
+.icon-aios_fuhe:before {
+  content: "\E912"
+}
+
+.icon-aios_fuhe-1:before {
+  content: "\E913"
+}
+
+.icon-aios_fuzhi:before {
+  content: "\E914"
+}
+
+.icon-aios_gerenzhongxin:before {
+  content: "\E915"
+}
+
+.icon-aios_gongsixinxi:before {
+  content: "\E916"
+}
+
+.icon-aios_gouxuan:before {
+  content: "\E917"
+}
+
+.icon-aios_hebing:before {
+  content: "\E918"
+}
+
+.icon-aios_huifu-1:before {
+  content: "\E919"
+}
+
+.icon-aios_huifu-2:before {
+  content: "\E91A"
+}
+
+.icon-aios_jianqie:before {
+  content: "\E91B"
+}
+
+.icon-aios_jiantizhongwen:before {
+  content: "\E91C"
+}
+
+.icon-aios_jiezhishijian:before {
+  content: "\E91D"
+}
+
+.icon-aios_kelong:before {
+  content: "\E91E"
+}
+
+.icon-aios_kelong-1:before {
+  content: "\E91F"
+}
+
+.icon-aios_kelong-2:before {
+  content: "\E920"
+}
+
+.icon-aios_liebiao:before {
+  content: "\E921"
+}
+
+.icon-aios_miaoshuwendangdoc:before {
+  content: "\E922"
+}
+
+.icon-aios_miaoshuwendangdoc1:before {
+  content: "\E923"
+}
+
+.icon-aios_mima:before {
+  content: "\E924"
+}
+
+.icon-aios_mimazhongzhi:before {
+  content: "\E925"
+}
+
+.icon-aios_niantie:before {
+  content: "\E926"
+}
+
+.icon-aios_qiehuanqiye:before {
+  content: "\E927"
+}
+
+.icon-aios_querenmima:before {
+  content: "\E928"
+}
+
+.icon-aios_quxiao:before {
+  content: "\E929"
+}
+
+.icon-aios_quyanzheng:before {
+  content: "\E92A"
+}
+
+.icon-aios_quyanzheng-1:before {
+  content: "\E92B"
+}
+
+.icon-aios_shanchu:before {
+  content: "\E92C"
+}
+
+.icon-aios_shangchuan:before {
+  content: "\E92D"
+}
+
+.icon-aios_shangchuan-1:before {
+  content: "\E92E"
+}
+
+.icon-aios_shangchuan-2:before {
+  content: "\E92F"
+}
+
+.icon-aios_shangchuanshibai-yizanting:before {
+  content: "\E930"
+}
+
+.icon-aios_shenpi:before {
+  content: "\E931"
+}
+
+.icon-aios_shenqing:before {
+  content: "\E932"
+}
+
+.icon-aios_shenqingjiaru:before {
+  content: "\E933"
+}
+
+.icon-aios_shezhi:before {
+  content: "\E934"
+}
+
+.icon-aios_shuaxin:before {
+  content: "\E935"
+}
+
+.icon-aios_sousuo:before {
+  content: "\E936"
+}
+
+.icon-aios_tianjia:before {
+  content: "\E937"
+}
+
+.icon-aios_tihuanzuyuan:before {
+  content: "\E938"
+}
+
+.icon-aios_tijiao:before {
+  content: "\E939"
+}
+
+.icon-aios_tuichu:before {
+  content: "\E93A"
+}
+
+.icon-aios_xiala:before {
+  content: "\E93B"
+}
+
+.icon-aios_xianshi:before {
+  content: "\E93C"
+}
+
+.icon-aios_xianshixinxi:before {
+  content: "\E93D"
+}
+
+.icon-aios_xiaoxizhongxin:before {
+  content: "\E93E"
+}
+
+.icon-aios_xinjiankuang:before {
+  content: "\E93F"
+}
+
+.icon-aios_xinjianwenjian:before {
+  content: "\E940"
+}
+
+.icon-aios_xinjianwenjianjia:before {
+  content: "\E941"
+}
+
+.icon-aios_xinzengqiye:before {
+  content: "\E942"
+}
+
+.icon-aios_xiugai:before {
+  content: "\E943"
+}
+
+.icon-aios_yanzhengma:before {
+  content: "\E944"
+}
+
+.icon-aios_yemian-hou:before {
+  content: "\E945"
+}
+
+.icon-aios_yemian-qian:before {
+  content: "\E946"
+}
+
+.icon-aios_yidongdao:before {
+  content: "\E947"
+}
+
+.icon-aios_yincang:before {
+  content: "\E948"
+}
+
+.icon-aios_yincangbiaozhu2:before {
+  content: "\E949"
+}
+
+.icon-aios_yingyong:before {
+  content: "\E94A"
+}
+
+.icon-aios_yonghubianji:before {
+  content: "\E94B"
+}
+
+.icon-aios_yunhang:before {
+  content: "\E94C"
+}
+
+.icon-aios_zanting:before {
+  content: "\E94D"
+}
+
+.icon-aios_zanting-1:before {
+  content: "\E94E"
+}
+
+.icon-aios_zhanghao:before {
+  content: "\E94F"
+}
+
+.icon-aios_zhongshi:before {
+  content: "\E950"
+}
+
+.icon-aios_zhongzhi:before {
+  content: "\E951"
+}
+
+.icon-aios_zhuanrang:before {
+  content: "\E952"
+}
+
+.icon-aios_zhucechenggong:before {
+  content: "\E953"
+}
+
+.icon-aios_zhuceshibai:before {
+  content: "\E954"
+}
+
+.icon-aios_zuyuanliebiao:before {
+  content: "\E955"
+}
+
+.icon-aios_gallery:before {
+  content: "\E9A5"
+}
+
+.icon-aios_pin:before {
+  content: "\E9A6"
+}
+
+.icon-aios_remark:before {
+  content: "\E9A4";
+  color: #595959
+}
+
+.icon-aios_outside_frame:before {
+  content: "\E9C1"
+}
+
+.icon-bg .path1:before {
+  content: "\E9C2";
+  color: #fff
+}
+
+.icon-bg .path2:before {
+  content: "\E9C3";
+  margin-left: -1em;
+  color: #ccc
+}
+
+.icon-lg_item_remove:before {
+  content: "\EA22";
+  color: #ff4d4f
+}
+
+.icon-lg_item_add:before {
+  content: "\EA23";
+  color: #fff
+}
+
+.icon-lg_drawback:before {
+  content: "\EA24"
+}
+
+.icon-lg_edit:before {
+  content: "\EA25"
+}
+
+.icon-lg_optimize:before {
+  content: "\EA26"
+}
+
+.icon-lg_publish:before {
+  content: "\EA27"
+}
+
+.icon-lg_reject:before {
+  content: "\EA28"
+}
+
+.icon-lg_Up:before {
+  content: "\EA29"
+}
+
+.icon-lg_update:before {
+  content: "\EA2A"
+}
+
+.icon-lg_upload:before {
+  content: "\EA2B"
+}
+
+.icon-lg_upload_blue:before {
+  content: "\EA2C"
+}
+
+.icon-lg_view:before {
+  content: "\EA2D"
+}
+
+.icon-lg_accept:before {
+  content: "\EA2E"
+}
+
+.icon-lg_acceptance:before {
+  content: "\EA2F"
+}
+
+.icon-lg_Close:before {
+  content: "\EA30"
+}
+
+.icon-lg_delete:before {
+  content: "\EA31"
+}
+
+.icon-lg_Down:before {
+  content: "\EA32"
+}
+
+.icon-lg_download:before {
+  content: "\EA33"
+}

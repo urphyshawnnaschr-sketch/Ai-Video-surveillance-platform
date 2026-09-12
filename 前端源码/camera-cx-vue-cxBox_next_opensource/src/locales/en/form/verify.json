@@ -1,0 +1,8 @@
+{
+  "accountOrPwdCannot": "Account password cannot be empty",
+  "cannotExceed": "The uploaded file cannot exceed 100MB",
+  "nameCannot": "The name cannot be empty",
+  "phoneCannot": "The phone number cannot be empty",
+  "phoneError": "Wrong phone number",
+  "phoneIncorrect": "The format of the phone number is incorrect"
+}

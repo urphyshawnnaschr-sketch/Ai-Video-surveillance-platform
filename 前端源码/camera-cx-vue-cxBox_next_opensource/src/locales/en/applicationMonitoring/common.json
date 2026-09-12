@@ -1,0 +1,30 @@
+{
+  "abnormalRoute": "Abnormal number of routes",
+  "alarmPopup": "Alarm pop-up window",
+  "applicationMonitoring": {
+    "boxManagement": {
+      "localAlgorithms": "Overview of local algorithms"
+    }
+  },
+  "applicationScenarios": "Application scenarios",
+  "baseInfo": "Basic information",
+  "belongingCamera": "Associated camera",
+  "closeRoute": "Close Channel Count",
+  "confidence": "Confidence level",
+  "configuration": "Time slot configuration",
+  "deleteArea": "Delete this region",
+  "fourScreen": "Four Screens",
+  "historicalversion": "Historical version",
+  "nineScreen": "Nine Screens",
+  "notRunning": "Not running",
+  "abnormal": "Abnormal",
+  "oneScreen": "One Screen",
+  "operating": "Number of operating routes",
+  "realData": "RTData",
+  "running": "Running",
+  "sixScreen": "Six Screens",
+  "todayAlarmNum": "Today's Alarms:",
+  "updateSuccess": "Update success",
+  "updateTime": "Update time",
+  "videoSource": "Video source"
+}

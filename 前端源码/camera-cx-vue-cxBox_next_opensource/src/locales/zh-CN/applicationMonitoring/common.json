@@ -1,0 +1,30 @@
+{
+  "abnormalRoute": "异常路数",
+  "alarmPopup": "报警弹窗",
+  "applicationMonitoring": {
+    "boxManagement": {
+      "localAlgorithms": "本地算法总览"
+    }
+  },
+  "applicationScenarios": "应用场景",
+  "baseInfo": "基本信息",
+  "belongingCamera": "所属摄像机",
+  "closeRoute": "关闭路数",
+  "confidence": "置信度",
+  "configuration": "时段配置",
+  "deleteArea": "删除该区域",
+  "fourScreen": "四屏",
+  "historicalversion": "历史版本",
+  "notRunning": "未运行",
+  "abnormal": "异常",
+  "oneScreen": "一屏",
+  "operating": "运行路数",
+  "realData": "实时数据",
+  "running": "运行中",
+  "sixScreen": "六屏",
+  "nineScreen": "九屏",
+  "todayAlarmNum": "今日告警数量：",
+  "updateSuccess": "更新成功",
+  "updateTime": "更新时间",
+  "videoSource": "视频源"
+}

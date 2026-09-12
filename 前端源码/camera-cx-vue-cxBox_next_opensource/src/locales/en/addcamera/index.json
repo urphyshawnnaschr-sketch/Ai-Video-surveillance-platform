@@ -1,0 +1,23 @@
+{
+  "835776": "Please save before drawing",
+  "01v8ns": "First time downloading algorithm model",
+  "19x4c2": "Identify the region",
+  "2pp436": "Please enter the alarm interval",
+  "37842u": "Algorithm Association",
+  "38h7cr": "Please enter the RTSP streaming address",
+  "3j841d": "RTSP Stream Address",
+  "streamAddress2":"RTSP Stream Address 2",  
+  "424m2o": "You can click on \"Local Algorithm Overview\" on the \"Video Preview\" page to view the usage of all algorithms in the current edge box.",
+  "4x6clo": "After downloading the new version again, if you modify the camera parameters, the calculation will still be based on the first submitted version",
+  "56257p": "Algorithm version switching reminder",
+  "8b5r3b": "Photo taken successfully",
+  "d582ei": "Download the new version of the algorithm model again",
+  "f5gcee": "Select IP audio column",
+  "kc7k18": "Select",
+  "m19lxu": "After the first download is completed and enabled, the system will calculate based on the version submitted for the first time.",
+  "q7mn07": "Already Drawn",
+  "q7r7gh": "If you wish to change the algorithm version of this edge box, you can go to the Algorithm Mall and click on \"Algorithm Upgrade\" on the specific algorithm card to switch versions.",
+  "sg6fq2": "Take photos and pictures",
+  "ti38f4": "Zoning",
+  "ws9o1n": "Please enter the recognition interval"
+}

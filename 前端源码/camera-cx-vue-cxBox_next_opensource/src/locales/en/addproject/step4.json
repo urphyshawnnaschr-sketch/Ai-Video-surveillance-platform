@@ -1,0 +1,19 @@
+{
+  "0j1942": "Please upload the file",
+  "2t65ru": "4. The image files in the compressed file should be placed in the images folder, and the annotation files should be placed in the annotations folder",
+  "3778o3": "3. [Image classification/object detection] The annotated datasets all support image+CoCo/VOC/json/xml format",
+  "3s7bmj": "Extract Results",
+  "552mc8": "1. Only supports uploading zip format compressed files",
+  "6p8cbx": "Upload Example",
+  "70gtj4": "Annotated Examples",
+  "70ju1h": "Select the image creation range based on the latest generated alarm image as 1.",
+  "gn1245": "End",
+  "j27i23": "2. The image format requirements in the compressed file are: *. jpg, *. jpeg, *. png*\n. bmp box locates the position of the object",
+  "noowxf": "1. Only supports uploading Word format files",
+  "qiurr2": "Fix",
+  "qs1f86": "Start",
+  "t346v6": "Extraction Range",
+  "w34wt4": "Extract Interval",
+  "wx1p4g": "2. If not uploaded, default to using existing examples under the current project group",
+  "yo1ieo": "The image obtained based on the \"extraction range\" supports setting the extraction interval for secondary filtering."
+}

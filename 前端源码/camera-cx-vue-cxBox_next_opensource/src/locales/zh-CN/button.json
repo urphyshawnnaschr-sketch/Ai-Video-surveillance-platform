@@ -1,0 +1,16 @@
+{
+  "addText": "添加{text}",
+  "cancelText": "取{text}消",
+  "clickToUpload": "点击上传",
+  "copyText": "复制",
+  "deleteText": "删除{text}",
+  "export": "导出",
+  "exportData": "导出统计数据",
+  "queryText": "查询",
+  "resetText": "重置{text}",
+  "saveText": "保存{text}",
+  "searchText": "搜索",
+  "submitText": "提交",
+  "sureText": "确{text}定",
+  "viewText": "查看{text}"
+}

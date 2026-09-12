@@ -1,0 +1,18 @@
+{
+  "08h2i8": "Abnormal video connection",
+  "1r36o4": "Video cannot be played 1",
+  "43m4p3": "Failed to close hls player:",
+  "545os5": "Play exception, click to retry",
+  "54y6ax": "Play successfully",
+  "5by3gv": "The playback plugin is not supported",
+  "8046qf": "HLS player creation failed:",
+  "96pi56": "Not connected",
+  "f73jj6": "The video connection has been disconnected",
+  "g60a70": "The video connection has been closed",
+  "k5sx7k": "Video cannot be played 2",
+  "lqy3y4": "Video loading in progress",
+  "ob42b4": "Network connection exception",
+  "s86ek4": "Failed to close WebRTC player:",
+  "v7jy74": "WebRTC player creation failed:",
+  "v95f7k": "The video playback plugin is not supported"
+}

@@ -1,0 +1,211 @@
+server:
+  port: 8022
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/camera_ai_db?createDatabaseIfNotExist=true&useUnicode=false&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: ${APP_DEV_PASSWORD_1}
+    hikari:
+      maxLifetime: 1765000
+      maximumPoolSize: 30
+
+  sql:
+    init:
+      separator: ;
+      encoding: utf-8
+      platform: mysql
+      mode: always
+      schema-locations:
+        - classpath:sql/schema.sql
+        - classpath:sql/annotation_platform.sql
+        - classpath:sql/wvp_gb.sql
+        - classpath:sql/init-data.sql
+      continue-on-error: true
+
+  freemarker:
+    request-context-attribute: request
+    cache: false
+    charset: UTF-8
+    content-type: text/html
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+    settings:
+      number_format: 0.##
+      template_update_delay: 0
+
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+
+  cache:
+    jcache:
+      config: classpath:/ehcache3.xml
+
+mybatis-plus:
+  type-aliases-package: com.yihecode.camera.ai.entity
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: assign_id
+#configuration:
+#log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#Snapshot according Get image Storage Directory
+uploadDir: 'd:/data2/'
+#Alarm Image Storage Directory
+cameraDir: 'd:/data2/'
+#Model Image, Note Content Storage Directory
+modelDir: 'd:/data2/'
+#Recording Storage Directory
+recordDir: 'D:\ZLMediaKit_Win\Release\www\'
+#Server Access IP
+HOST_IP: '127.0.0.1'
+#oss Model Download Storage Directory
+dataModelsDir: 'd:/data2/'
+#Frontend IP Config File
+hostIpFile: ''
+modelType: 'people'
+
+sendMsg: 'a'
+
+#netty Config
+netty:
+  port: 8023
+
+#Work Process Phase Close Config
+proj-confs:
+  version: 1.3.0
+  #Device Type, chaoxing, 1684, 1684x
+  platform: chaoxing, 1684
+  #oss Mode, true- outer net Mode,false- inner net Mode, not Connection oss Read Resource List
+  oss-net: true
+  #Box Cross net Mode, true- Cross net Mode, Cross net Situation down, Snapshot according from Box Get, false- inner net Mode,
+  cross-net: false
+  #Mark Standard Function Whether Enabled
+  ap-enable: true
+  #Speaker Pole Function Whether Contain
+  sound-column-enable: true
+  #Person Stream Quantity Function Whether Contain
+  people-track-enable: true
+  #Face Function Whether Contain
+  face-recognize-enable: true
+  #Hand Machine app Function Whether make Use
+  app-enable: true
+  #Recording Function Whether make Use
+  record-enable: true
+  #Voice Push Enable
+  push-to-voice: true
+  #WeWork Group Push Enable
+  push-to-wechat: true
+  #DingTalk Group Push Enable
+  push-to-dingding: true
+  #SMS Push Enable
+  push-to-sms: true
+  #Cloud End receive Stream Port, Corresponding ZLM 554 Port
+  cloud_stream_port: 554
+  #Alarm Data Whether self Dynamic Push to Third Party, like Result for false, Need In Frontend Manual Push
+  alarm-auto-push: true
+  #Alarm Data Whether self Dynamic Review, like Result for false, Need In Frontend Manual Review
+  alarm-auto-audit: true
+  #Enabled GB Standard Function
+  wvp-gb-enable: true
+  #connect Continue Login Error sub Number, with IP for according according, Block Continue Login
+  login-error-count: 5
+  #connect Continue Login Error Time Range (s), Block Continue Login
+  login-error-time: 300
+  #connect Continue Login Error, Account Lock Hour long (min)
+  login-error-lock-time: 15
+  #Video Push Third Party Platform URL
+  third-push-video-url:
+  #Video Third Party Push Type, file- Only File,url- Only url
+  third-push-video-type: url
+
+############## ZlmediaKit Config ##############
+zlmediakit:
+  #Server Address, Default not Set, Pass config.js Read, like Result Read Failed, rule Default for 127.0.0.1, like Result Set, rule with The Address for Standard
+  http-ip: 192.168.0.121
+  #docker Mapper out Port
+  http-port: 8050
+  #customer account Mapper public net Port or Through Transparent Port, Non must, like Result not Config, make Use http-port
+  http-play-port:
+  #docker Mapper out Port
+  rtsp-port: 554
+  #webrtc Port
+  webrtc-port: 8000
+  #zlm Password +
+  secret: ${APP_DEV_SECRET_2}
+  #java IP
+  hook-ip: 192.168.0.121
+  #java port
+  hook-port: 8022
+  ssl-ip: 192.168.0.121
+  ssl-port: 8050
+
+#wvp Corresponding zlmediakit Config
+wvp-zlmediakit:
+  #zlm Server ip Address
+  ip: 192.168.0.122
+  #zlm Server http Port
+  http-port: 80
+  #zlm Server rtsp Port
+  rtsp-port: 554
+  #zlm Server Password
+  secret: ${APP_DEV_SECRET_3}
+  #Deploy Bit set, local- Local Deploy (and java Service same Machine), remote- far Process Deploy
+  deploy: remote
+
+#wvp Config
+wvp-conf:
+  #WVP Service IP, Required
+  wvp-ip: 127.0.0.1
+  #WVP Server Mouth, Required
+  wvp-port: 18080
+
+#GB Standard Config Info
+sip-conf:
+  #[can select] 28181 Service Listen Port
+  port: 8116
+  #According GB Standard 6.1.2 in Rule Fixed,domain Suitable Collect Use ID Unified One Code front Ten Bit Code. GB Standard Appendix Record D in Fixed Meaning front 8 Bit for in Core Code (by Province Level, City Level, Area Level, Base Layer No group Complete, Param according GB/T 2260-2007)
+  #after Two Bit for Line Industry Code, Fixed Meaning Param according Appendix Record D.3
+  #3701020049 ID Shandong Jinan Calendar down Area Info Line Industry Access
+  #[can select]
+  domain: 4101050000
+  #[can select]
+  id: 41010500002000000001
+  #[can select] Default Device Authenticate Password, after Continue Expand make Use Device form Single Password, Remove Password will not in Line Validate
+  password: ${APP_DEV_PASSWORD_4}
+  #Whether Storage alarm Info
+  alarm: false
+  #Listen ip Address
+  ip: 192.168.0.122
+
+############## Sa-Token Config (Document: https://sa-token.cc) ##############
+sa-token:
+  #token Name (same Hour Also is cookie Name)
+  token-name: X-Token
+  #token Valid Period, form Bit s Default 30 day, -1 instead table Forever not over Period
+  timeout: 2592000
+  #token Temporary Valid Period (Refer Timing between inner no Operation just View for token over Period) form Bit: s
+  activity-timeout: -1
+  #Whether Allow same One Account Concurrency Login (for true Hour Allow One Start Login, for false Hour New Login Squeeze Drop Old Login)
+  is-concurrent: true
+  #In multi Person Login same One Account Hour, Whether common Use One token (for true Hour All Login common Use One token, for false Hour Each sub Login New build One token)
+  is-share: true
+  #token Wind Grid
+  token-style: tik
+  #Whether input out Operation Log
+  is-log: false
+
+#Swagger enable
+swagger:
+  enable : false
+
+#Log Config
+logging:
+  file:
+    path: ${uploadDir}/log
