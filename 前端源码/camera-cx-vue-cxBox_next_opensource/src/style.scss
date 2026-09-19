@@ -1,0 +1,5 @@
+@function px2rem($px) {
+	$rem: 100px;
+	@return $px / $rem * 1rem;
+}
+
