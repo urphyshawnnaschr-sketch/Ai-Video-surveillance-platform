@@ -15,8 +15,8 @@
         :rowSelection="false"
       >
         <div slot="onLine" slot-scope="{ row }">
-          <el-tag :type="row.onLine == '1' ? 'success' : 'danger'">
-            {{ row.onLine == "1" ? $t("common.online") : $t("common.offline") }}
+          <el-tag :type="onlineStatus(row.onLine).type">
+            {{ onlineStatus(row.onLine).label }}
           </el-tag>
         </div>
 
@@ -83,6 +83,7 @@
 </template>
 <script>
 import { deviceList, deviceSync, deviceSyncStatus } from "./api";
+import { deviceOnlineStatus } from "@/utils/deviceOnlineStatus.mjs";
 import Tables from "@/components/Table/index.vue";
 import ChannelManagement from "./components/channel.vue";
 import ConfigInfo from "./components/platformInfo.vue";
@@ -184,6 +185,14 @@ export default {
     }
   },
   methods: {
+    // 模拟验收分支：状态缺失不等于设备离线；没有调用设备探测接口。
+    onlineStatus(value) {
+      const status = deviceOnlineStatus(value);
+      return {
+        ...status,
+        label: status.state === "unknown" ? "状态未知" : this.$t(`common.${status.state}`),
+      };
+    },
     // 获取数据
     getList() {
       this.loading = true;
